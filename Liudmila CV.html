@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Liudmila CV</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+
+    <div class="info">  
+        <img src="IMG_7392.JPG" alt="тут моя фотка" class="avatar"/>
+        <h1>Людмила Чликьян</h1>
+        <p>Я <strong>стилист-имиджмейкер</strong></p>
+        <p>Я люблю путешествовать,заниматься спортом и создаввть стильные образы</i></p>
+    </div>
+       
+
+    
+    <hr>
+<div class="social">
+ <h2>Мои социальные сети</h2>
+   <ul>   
+    <li><a href="https://www.instagram.com/lychia_chili?igsh=OW56Y3g1MnFtMmhw&utm_source=qr" target="blank">Instagram</a></li>
+    <li><a href="https://t.me/Lychia_ch" target="_blank">Telegram</a></li>
+  </ul>
+</div>
+        
+<hr>
+   
+
+
+    <h2>Мои хобби</h2>
+   <ol>
+        <li>Блоггер</li>
+        <li>Лыжы</li>
+        <li>Спорт</li>
+        <li>Эстетические фотографии</li>
+        <li>Путешествия</li>
+    </ol>
+
+    
+    <h2>Опыт работы</h2>
+    <table>
+        <tr>
+            <th>Компания</th>
+            <th>Должность</th>
+            <th>Год</th>
+        </tr>
+        <tr>
+            <td>Max Moda</td>
+            <td>VM Merchandaizer</td>
+            <td>2023 - 2024</td>
+        </tr>
+        <tr>
+            <td>Freelance</td>
+            <td>Image stylist</td>
+            <td>2020 - 2024</td>
+        </tr>
+        <tr>
+            <td>Dolce&Gabbana</td>
+            <td>Designer</td>
+            <td>2018 - 2019</td>
+        </tr>
+        <tr>
+            <td>Bosco di Giliegi</td>
+            <td>Head of VM Departament</td>
+            <td>2015 - 2018</td>
+        </tr>
+    </table>
+    
+    <hr>
+    
+    <h2>Youtube Курсы</h2>
+    <a href="youtube.html" target="_blank">Посмотреть список</a>
+
+    <hr>
+    
+    <h2>Связаться со мной</h2>
+ 
+    <form action="/">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите ваше имя">
+    
+        <br>
+    
+    
+        <label for="email">Ваше Email:</label>
+        <input type="email" id="email" placeholder="Введите ваше email...">
+    
+        <br>
+    
+        <br>
+    
+    
+        <label for="text">Ваше сообщение:</label>
+        <br>
+       <textarea id="text"rows="2" colors="15"></textarea>
+       <br>
+    
+        <input type="submit" value="Связаться!">
+    </form>
+    
+    <hr>
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
